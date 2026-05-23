@@ -1,0 +1,17 @@
+# Rust Build Target
+/target
+/target/
+
+# Local Execution and Test SQL Files
+sample.sql
+test.sql
+sanitized_sample.sql
+*.sql
+
+# However, do not ignore specific SQL files if they need to be tracked
+!schema.sql
+
+# System and Local Environment Files
+.DS_Store
+.env
+.env.*

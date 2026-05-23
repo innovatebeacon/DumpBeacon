@@ -1,0 +1,10 @@
+CREATE TABLE customers (
+    id INT,
+    full_name VARCHAR(100),
+    email VARCHAR(100),
+    password_hash VARCHAR(255),
+    phone_number VARCHAR(30)
+);
+
+INSERT INTO customers VALUES (1, 'John Doe', 'johndoe@gmail.com', '$2b$12$K39dkSj293kdSjksD92k', '+1-555-839-2019');
+INSERT INTO customers VALUES (2, 'Jane Smith', 'jane.smith@corporate.com', 'mysecretpassword123', '021-9382-102');

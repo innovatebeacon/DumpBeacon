@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DumpBeacon Pricing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#1f2933",
+            muted: "#64707d",
+            line: "#d9dee5",
+            beacon: "#0f766e",
+            cobalt: "#2563eb",
+            paper: "#f6f7f9"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-paper text-ink antialiased">
+  <main class="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+    <section class="grid gap-5 pb-8">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-beacon">DumpBeacon Pricing</p>
+      <div class="grid gap-4 lg:grid-cols-[1fr_0.72fr] lg:items-end">
+        <h1 class="max-w-3xl text-4xl font-black leading-none tracking-normal sm:text-6xl">
+          Local-first SQL dump cleanup without recurring rent.
+        </h1>
+        <p class="text-base leading-7 text-muted">
+          Start with the browser preview and graduate to the desktop engine when your SQL dumps are too large or too sensitive for cloud tooling.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid gap-4 lg:grid-cols-2" aria-label="Pricing plans">
+      <article class="rounded-lg border border-line bg-white p-6 shadow-sm">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-black tracking-normal">Free Core</h2>
+            <p class="mt-2 text-sm leading-6 text-muted">For quick schema previews and small local cleanup jobs.</p>
+          </div>
+          <span class="rounded-full bg-slate-100 px-3 py-1 text-sm font-bold text-slate-700">Web</span>
+        </div>
+
+        <div class="mt-6 flex items-end gap-2">
+          <strong class="text-5xl font-black tracking-normal">$0</strong>
+          <span class="pb-2 text-muted">forever</span>
+        </div>
+
+        <a href="dev-tools.html" class="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-beacon px-4 py-3 text-center font-bold text-white">
+          Open Web Preview
+        </a>
+
+        <ul class="mt-6 grid gap-3 text-sm text-ink">
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>Client-side SQL schema extraction</span></li>
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>JSON output for CREATE TABLE statements</span></li>
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>No upload, account, or telemetry required</span></li>
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>Best for smaller files and browser-safe previews</span></li>
+        </ul>
+      </article>
+
+      <article class="rounded-lg border-2 border-beacon bg-white p-6 shadow-xl shadow-teal-900/10">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-black tracking-normal">Pro One-Time</h2>
+            <p class="mt-2 text-sm leading-6 text-muted">For heavy dumps, repeat sanitization, and desktop workflows.</p>
+          </div>
+          <span class="rounded-full bg-teal-50 px-3 py-1 text-sm font-bold text-beacon">Desktop</span>
+        </div>
+
+        <div class="mt-6 flex items-end gap-2">
+          <strong class="text-5xl font-black tracking-normal">$49</strong>
+          <span class="pb-2 text-muted">one-time license</span>
+        </div>
+
+        <a href="#features" class="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-ink px-4 py-3 text-center font-bold text-white">
+          Compare Features
+        </a>
+
+        <ul class="mt-6 grid gap-3 text-sm text-ink">
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>Tokio-powered local file streaming</span></li>
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>PII detection for email, password, phone, names, tokens, and address fields</span></li>
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>Mock data replacement for safer development imports</span></li>
+          <li class="flex gap-3"><span class="font-black text-beacon">✓</span><span>Priority updates for parser rules and desktop exports</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="features" class="mt-8 overflow-hidden rounded-lg border border-line bg-white shadow-sm" aria-label="Feature comparison">
+      <div class="grid gap-2 border-b border-line p-5">
+        <h2 class="text-xl font-black tracking-normal">Feature Matrix</h2>
+        <p class="text-sm text-muted">A practical split between browser preview and production-grade local sanitization.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[720px] border-collapse text-left text-sm">
+          <thead class="bg-slate-50 text-xs uppercase text-muted">
+            <tr>
+              <th class="border-b border-line px-5 py-4 font-black">Capability</th>
+              <th class="border-b border-line px-5 py-4 font-black">Free Core</th>
+              <th class="border-b border-line px-5 py-4 font-black">Pro One-Time</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-line">
+            <tr>
+              <td class="px-5 py-4 font-semibold">Runs locally</td>
+              <td class="px-5 py-4 text-muted">Browser only</td>
+              <td class="px-5 py-4 text-ink">Desktop app, no cloud dependency</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-semibold">SQL schema preview</td>
+              <td class="px-5 py-4 text-ink">Included</td>
+              <td class="px-5 py-4 text-ink">Included with larger file handling</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-semibold">PII value sanitization</td>
+              <td class="px-5 py-4 text-muted">Column detection preview</td>
+              <td class="px-5 py-4 text-ink">Streaming replacement with mock data</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-semibold">Massive file support</td>
+              <td class="px-5 py-4 text-muted">Limited by browser memory and file APIs</td>
+              <td class="px-5 py-4 text-ink">Designed for multi-GB SQL dumps</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-semibold">Exports</td>
+              <td class="px-5 py-4 text-muted">Copy JSON schema metadata</td>
+              <td class="px-5 py-4 text-ink">Write sanitized .sql files to disk</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-4 font-semibold">License</td>
+              <td class="px-5 py-4 text-muted">Free</td>
+              <td class="px-5 py-4 text-ink">One-time commercial license</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - DumpBeacon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0b0f19; /* Requested dark theme */
+            color: #f8fafc;
+        }
+        .card-bg {
+            background-color: #111827;
+        }
+        .card-border {
+            border-color: #1e293b;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-20 px-4 sm:px-6 lg:px-8 font-sans antialiased flex flex-col justify-center">
+
+    <!-- Header Section -->
+    <div class="max-w-4xl mx-auto text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+            DumpBeacon: <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">Zero-Cloud Local-First</span><br/> SQL Visualizer & Sanitizer
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+            Process massive sensitive SQL dumps securely on your own hardware. No recurring subscriptions, no cloud leaks. Own your tools forever.
+        </p>
+    </div>
+
+    <!-- Pricing Grid -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Hobbyist Tier -->
+        <div class="card-bg border card-border rounded-2xl p-8 flex flex-col shadow-xl hover:border-slate-600 transition-colors duration-300">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-slate-300 mb-2">Hobbyist</h2>
+                <p class="text-slate-500 text-sm">Perfect for personal projects and small database dumps.</p>
+            </div>
+            <div class="mb-8 flex items-baseline gap-2">
+                <span class="text-5xl font-black text-white">$0</span>
+                <span class="text-slate-500 font-medium tracking-wide">/ 30-Day Free Trial</span>
+            </div>
+            <ul class="flex-grow space-y-4 mb-10">
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-slate-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-300">Web-based Schema Previewer</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-slate-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-300">Strict 50MB file size limit</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-slate-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-300">Basic Regex Data Masking</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-slate-700 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    <span class="text-slate-600 line-through">CLI Desktop Automation</span>
+                </li>
+            </ul>
+            <a href="#" class="mt-auto block w-full py-3.5 px-4 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-center rounded-xl transition duration-200 ring-1 ring-slate-700">Get Started</a>
+        </div>
+
+        <!-- Pro License Tier (Highlighted) -->
+        <div class="card-bg border-2 border-indigo-500 rounded-2xl p-8 flex flex-col shadow-2xl relative transform lg:-translate-y-4">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-indigo-500 text-white px-5 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">Most Popular</div>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-2">Pro License</h2>
+                <p class="text-slate-400 text-sm">For professional developers handling gigabytes of local data.</p>
+            </div>
+            <div class="mb-8 flex items-baseline gap-2">
+                <span class="text-5xl font-black text-white">$29</span>
+                <span class="text-slate-400 font-medium tracking-wide">/ One-Time Purchase</span>
+            </div>
+            <ul class="flex-grow space-y-4 mb-10">
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-indigo-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-200">Unlimited File Size Limits (Memory Stream)</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-indigo-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-200">Advanced Desktop Sanitizer CLI (Rust)</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-indigo-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-200">Custom Regex Masking Profiles</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-indigo-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-200">JSON & XML Embedded Regex Processing</span>
+                </li>
+            </ul>
+            <a href="https://innovatebeacon.lemonsqueezy.com/checkout/buy/pro-test" class="mt-auto block w-full py-3.5 px-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-center rounded-xl transition duration-200 shadow-lg shadow-indigo-500/25">Buy Pro License</a>
+        </div>
+
+        <!-- Team License Tier -->
+        <div class="card-bg border card-border rounded-2xl p-8 flex flex-col shadow-xl hover:border-slate-600 transition-colors duration-300">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-emerald-400 mb-2">Team License</h2>
+                <p class="text-slate-400 text-sm">For development agencies requiring shared configurations.</p>
+            </div>
+            <div class="mb-8 flex items-baseline gap-2">
+                <span class="text-5xl font-black text-white">$99</span>
+                <span class="text-slate-400 font-medium tracking-wide">/ One-Time Purchase</span>
+            </div>
+            <ul class="flex-grow space-y-4 mb-10">
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-emerald-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-300 font-medium">Everything in Pro License</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-emerald-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-300">Up to 10 Developer Seats</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-emerald-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-300">Shared CI/CD Configuration Files</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-emerald-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-300">Priority Email Support</span>
+                </li>
+            </ul>
+            <a href="https://innovatebeacon.lemonsqueezy.com/checkout/buy/team-test" class="mt-auto block w-full py-3.5 px-4 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-semibold text-center rounded-xl transition duration-200 ring-1 ring-emerald-500/50">Buy Team License</a>
+        </div>
+
+    </div>
+
+    <!-- Lemon Squeezy integration -->
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+    <script>
+        window.addEventListener('load', function() {
+            if (window.createLemonSqueezy) {
+                window.createLemonSqueezy();
+            }
+        });
+    </script>
+</body>
+</html>
