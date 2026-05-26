@@ -44,7 +44,7 @@ function parseFileChunked(file) {
             const match = line.match(createTableRegex);
             if (match) {
                 // Strip structural characters like backticks, quotes, brackets
-                currentTable = match[1].replace(/[`"\[\]]/g, '');
+                currentTable = match[1].replace(/[`"[\]]/g, '');
                 if (!schema[currentTable]) {
                     schema[currentTable] = [];
                 }
@@ -76,7 +76,7 @@ function parseFileChunked(file) {
                 // Match the first word on the line as the column name
                 const columnMatch = line.match(/^([^\s]+)/);
                 if (columnMatch) {
-                    const columnName = columnMatch[1].replace(/[`"\[\]]/g, '');
+                    const columnName = columnMatch[1].replace(/[`"[\]]/g, '');
                     
                     // Final safeguard against reserved keywords being captured incorrectly
                     const skipWords = ['CONSTRAINT', 'PRIMARY', 'FOREIGN', 'UNIQUE', 'KEY', 'INDEX', 'CHECK'];
@@ -116,7 +116,7 @@ function parseFileChunked(file) {
             setTimeout(readNextChunk, 0);
         };
 
-        reader.onerror = function(e) {
+        reader.onerror = function() {
             self.postMessage({ type: 'error', message: 'Error reading file chunks.' });
         };
 

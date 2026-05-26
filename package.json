@@ -1,0 +1,11 @@
+{
+  "name": "dumpbeacon-frontend",
+  "version": "1.0.0",
+  "description": "Frontend UI for DumpBeacon",
+  "scripts": {
+    "lint": "eslint web-preview/"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
